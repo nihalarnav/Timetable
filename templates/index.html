@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+    <head>
+        <title>
+            Timetable Scheduler
+        </title>
+        <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="../static/CSS/style.css">
+    </head>
+<div class="inner">
+	<div class="vec">
+		<div class="img">
+		<img src="{% static 'img/vect.jpg' %}">
+		</div>
+		<a href="https://www.freepik.com/free-photos-vectors/calendar">Time-table vector created by stories - www.freepik.com</a>
+		 </div>
+</div>
+<div class="card">
+	<div class="txt">
+		<h2>Timetable Generator</h2>
+		<p>Let our Artificial Intelligence schedule your classes.
+		Add your university class details and generate Time Table.</p>
+	</div>
+	<div class="crdbtn">
+		<a href="{% url 'timetable' %}" class="btn">Generate Timetable</a>
+
+	</div>
+</div>
+{% endblock %}
+
